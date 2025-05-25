@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Food Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>🍎 Food Store</h1>
+        <nav>
+          <ul>
+            <li><a href="#" onclick="logout()">Sair</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h2 class="section-title">Login</h2>
+      <form id="login-form">
+        <label>Email:</label>
+        <input type="email" id="login-email" required />
+
+        <label>Senha:</label>
+        <input type="password" id="login-password" required />
+
+        <button type="submit">Entrar</button>
+      </form>
+
+      <p>Não tem conta? <a href="register.html">Cadastre-se</a></p>
+    </main>
+  </body>
+  <script src="auth.js"></script>
+</html>

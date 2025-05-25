@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store | E-commerce de Alimentos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>🍎 Food Store</h1>
+        <nav>
+          <ul>
+            <li><a href="#" onclick="logout()">Sair</a></li>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="cart">
+          🛒 <a href="cart.html">Carrinho</a> <span id="cart-count">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2 class="section-title">Nossos Produtos</h2>
+      <section id="product-list" class="product-list">
+        <!-- Produtos serão inseridos via JavaScript -->
+      </section>
+    </main>
+
+    <footer>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>🍎 Food Store</h3>
+            <p>
+              Seu mercado online de alimentos frescos e de qualidade. Entregamos
+              com carinho na sua porta!
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="cart.html">Carrinho</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Cadastro</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contato</h4>
+            <p>📞 (11) 99999-0000</p>
+            <p>✉️ contato@foodstore.com</p>
+            <p>📍 Rua dos Alimentos, 123, São Paulo - SP</p>
+          </div>
+
+          <div class="footer-social">
+            <h4>Siga-nos</h4>
+            <div class="social-icons">
+              <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+              <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Food Store. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

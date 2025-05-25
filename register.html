@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro | Food Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>🍎 Food Store</h1>
+        <nav>
+          <ul>
+            <li><a href="#" onclick="logout()">Sair</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h2 class="section-title">Cadastro</h2>
+      <form id="register-form">
+        <label>Nome:</label>
+        <input type="text" id="register-name" required />
+
+        <label>Email:</label>
+        <input type="email" id="register-email" required />
+
+        <label>Senha:</label>
+        <input type="password" id="register-password" required />
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <p>Já tem conta? <a href="login.html">Faça login</a></p>
+    </main>
+  </body>
+  <script src="auth.js"></script>
+</html>

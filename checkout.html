@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Food Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>🍎 Food Store</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cart.html">Carrinho</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2 class="section-title">Finalizar Pedido</h2>
+
+      <form id="checkout-form">
+        <h3>Seus Dados</h3>
+        <label>Nome:</label>
+        <input type="text" id="checkout-name" required />
+
+        <label>Endereço:</label>
+        <input type="text" id="checkout-address" required />
+
+        <label>Forma de Pagamento:</label>
+        <select id="checkout-payment" required>
+          <option value="">Selecione</option>
+          <option value="pix">PIX</option>
+          <option value="boleto">Boleto</option>
+          <option value="cartao">Cartão de Crédito</option>
+        </select>
+
+        <h3>Resumo do Pedido</h3>
+        <div id="order-summary"></div>
+
+        <p>
+          Total: <strong>R$ <span id="order-total">0.00</span></strong>
+        </p>
+
+        <button type="submit">Confirmar Pedido</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Food Store. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
